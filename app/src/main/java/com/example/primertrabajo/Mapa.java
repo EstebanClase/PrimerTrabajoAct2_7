@@ -6,18 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.Map;
-
-public class MainActivity3 extends AppCompatActivity {
+public class Mapa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_mapa);
     }
 
-    public void Empezar(View view){
-        Intent empezar = new Intent(this, Mapa.class);
-        startActivity(empezar);
+    public void Perfil(View view){
+        Intent perfil = new Intent(this, Perfil.class);
+        startActivity(perfil);
     }
 }

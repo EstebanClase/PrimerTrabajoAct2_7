@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PrimerTrabajo</string>
+    <string-array name="equipos">
+        <item>Nombre de usuario</item>
+    </string-array>
+
+    <string-array name="anios">
+        <item>Email</item>
+    </string-array>
+
+    <string-array name="fecha">
+        <item>Fecha de inscripción</item>
+    </string-array>
 </resources>
