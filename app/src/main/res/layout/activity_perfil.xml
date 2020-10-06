@@ -7,10 +7,9 @@
     tools:context=".Perfil">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_detallesP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Detalles"
         android:text="Detalles de Perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -62,6 +62,10 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
         <RadioButton
             android:id="@+id/rdb_masculino"
             android:layout_width="match_parent"
@@ -74,16 +78,17 @@
             android:layout_height="wrap_content"
             android:text="Femenino" />
 
-        <Button
+    </RadioGroup>
+
+    <Button
             android:id="@+id/btn_guardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Guardar" />
 
-        <Button
-            android:id="@+id/btn_volver"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="Cerrar"
-            android:text="Volver" />
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver" />
     </LinearLayout>

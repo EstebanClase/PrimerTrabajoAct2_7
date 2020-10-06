@@ -39,14 +39,12 @@
         android:id="@+id/btn_ingresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Ingresar"
         android:text="Ingresar" />
 
     <Button
         android:id="@+id/btn_registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Registrar"
         android:text="Registrarse" />
 
     <Button
