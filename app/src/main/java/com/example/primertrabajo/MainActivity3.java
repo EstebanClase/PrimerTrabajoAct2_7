@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.util.Map;
-
 public class MainActivity3 extends AppCompatActivity {
 
     Button btn_empezar;
@@ -20,7 +18,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        nickname = (EditText)findViewById(R.id.txt_nickname);
+        nickname = (EditText)findViewById(R.id.txt_nombreEscogido);
         btn_empezar = (Button)findViewById(R.id.btn_empezar);
         btn_empezar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +29,7 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     public void Empezar(){
-        Intent empezar = new Intent(this, Mapa.class);
+        Intent empezar = new Intent(this, MapsActivity.class);
         empezar.putExtra("nickname", nickname.getText().toString());
         startActivity(empezar);
     }
