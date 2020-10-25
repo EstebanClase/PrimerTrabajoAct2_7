@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void Ingresar(){
         Intent ingresar = new Intent(this, MainActivity3.class);
         startActivity(ingresar);
+        detener();
     }
 
     public void Registrar(){
