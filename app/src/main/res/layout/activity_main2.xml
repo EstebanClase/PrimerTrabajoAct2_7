@@ -29,31 +29,31 @@
             android:hint="Ingresar nombre de usuario"
             android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/txt_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese email"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese su email"
+        android:inputType="textEmailAddress" />
 
-        <EditText
-            android:id="@+id/txt_pass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Ingrese una contraseña"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword" />
 
-        <EditText
-            android:id="@+id/txt_confirmarpass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Confirme su contraseña"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/txt_confirmarpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirme su contraseña"
+        android:inputType="textPassword" />
 
-        <TextView
+    <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,10 +81,11 @@
     </RadioGroup>
 
     <Button
-            android:id="@+id/btn_guardar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar" />
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="alta"
+        android:text="Guardar" />
 
     <Button
         android:id="@+id/btn_volver"
