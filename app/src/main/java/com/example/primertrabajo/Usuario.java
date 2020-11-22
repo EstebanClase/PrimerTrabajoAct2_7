@@ -2,20 +2,20 @@ package com.example.primertrabajo;
 
 public class Usuario {
     int Id;
-    String nombre, apellido, usuario, password;
+    String usuario, nombre, email, password;
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String apellido, String usuario, String password) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Usuario(String nombre, String email, String usuario, String password) {
         this.usuario = usuario;
+        this.nombre = nombre;
+        this.email = email;
         this.password = password;
     }
 
     public boolean isNull(){
-        if(nombre.equals("") && apellido.equals("") && usuario.equals("") && password.equals("")){
+        if(nombre.equals("") && email.equals("") && usuario.equals("") && password.equals("")){
             return false;
         }
         else{
@@ -27,9 +27,9 @@ public class Usuario {
     public String toString() {
         return "Usuario{" +
                 "Id=" + Id +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
                 ", usuario='" + usuario + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
@@ -50,12 +50,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getEmail() {
+        return email;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getUsuario() {

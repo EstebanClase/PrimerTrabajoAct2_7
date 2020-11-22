@@ -22,6 +22,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/descrip"
                 app:srcCompat="@drawable/img" />
 
         </LinearLayout>
@@ -30,7 +31,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingrese un nickname:"
+            android:text="@string/txt_nickname"
             android:textSize="20sp" />
 
         <EditText
@@ -44,7 +45,8 @@
             android:id="@+id/btn_empezar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Empezar" />
+            android:background="@drawable/button_rounded"
+            android:text="@string/btn_empezar" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

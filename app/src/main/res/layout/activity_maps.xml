@@ -42,6 +42,8 @@
             android:id="@+id/btn_perfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Perfil" />
+            android:background="@drawable/button_rounded"
+            android:text="@string/btn_atras"
+            android:textColor="#070707" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

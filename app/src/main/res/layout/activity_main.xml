@@ -13,45 +13,54 @@
     <TextView
         android:id="@+id/txt_principal"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Inicio de Sesion"
+        android:layout_margin="8dp"
+        android:forceDarkAllowed="false"
+        android:text="@string/inicio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
-        <EditText
-            android:id="@+id/usuario"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:ems="10"
-            android:hint="Ingresar usuario"
-            android:inputType="textPersonName" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/descrip"
+        app:srcCompat="@drawable/logomapa" />
 
-        <EditText
-            android:id="@+id/pass"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/txt_inicio"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/txt_pass"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btn_ingresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingresar" />
+        android:layout_margin="8dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/btn_ingresar"
+        android:typeface="normal" />
 
     <Button
         android:id="@+id/btn_registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrarse" />
+        android:layout_margin="8dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/btn_registrarse" />
 
-    <Button
-        android:id="@+id/btn_recuperar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:backgroundTint="#FFFFFF"
-        android:text="¿Has olvidado tu contraseña?" />
 </LinearLayout>

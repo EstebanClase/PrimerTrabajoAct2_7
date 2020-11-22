@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
-
     Button btn_empezar;
     EditText nickname;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ public class MainActivity3 extends AppCompatActivity {
                 Empezar();
             }
         });
+
+
     }
 
     public void Empezar(){
@@ -33,4 +36,5 @@ public class MainActivity3 extends AppCompatActivity {
         empezar.putExtra("nickname", nickname.getText().toString());
         startActivity(empezar);
     }
+
 }

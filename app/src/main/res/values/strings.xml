@@ -11,5 +11,36 @@
     <string-array name="fecha">
         <item>Fecha de inscripción</item>
     </string-array>
+    <string name="inicio">Inicio de Sesion</string>
+    <string name="txt_inicio">Ingresar usuario</string>
+    <string name="txt_pass">Ingrese su contraseña</string>
+    <string name="descrip">descripcion</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="txt_registro">Registro de Datos</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_volver">Volver</string>
+    <string name="txt_nickname">Ingrese un nickname:</string>
+    <string name="btn_empezar">Empezar</string>
+    <string name="btn_atras">Atras</string>
+    <string name="txt_datos">Datos del usuario</string>
+    <string name="txt_nombre_usuario">Nombre de usuario:</string>
+    <string name="txt_nombre">Nombre:</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_uso">Uso de la app</string>
+    <string name="btn_inicio">Inicio</string>
+
+
+
+    <string name="descripcion">Toque lo marcadores de colores, de esta manera aparecera el nombre del local y tocando el nombre del local se desplegara una ventana donde usted ya podra obtener informacion sobre cada local </string>
     <string name="title_activity_maps">Map</string>
+    <string name="negocio1">-Este negocio atiende de 10:00 a 15:00 y de 16:00 a 20:00\n-Venta de insumos basicos\n-No hace entrega a domicilio</string>
+    <string name="negocio2">-Este negocio atiende de 10:00 a 19:00\n-Venta de pan, bebidas y empandas\n-Si realiza entregas a domicilio</string>
+    <string name="negocio3">-Este negocio atiende de 8:30 a 13:00 y de 17:00 a 20:00 \n-Venta de insumos basicos \n-No realiza pedidos a domicilio</string>
+    <string name="negocio4">-Este negocio atiende de 9:00 a 13:00 y de 15:00 a 21:00\n-Venta de isnumos basicos, verduras y frutas\n-No realizsa entregas a domicilio</string>
+    <string name="negocio5">-Este negocio atiende de 12:00 a 18:00\n-Venta de comida rapida\n-Si realiza envios a domicilio</string>
+    <string name="negocio6">-Este negocio atiende de 10:00 a 20:00\n-Venta de insumos basicos\n-Actualmente tambien vende comida rapida\n-Si realiza entregas a domicilio</string>
+    <string name="negocio7">-Este negocio atiende de 10:00 a 19:00\n-Venta de variados tipos de carne\n-Venta algunos insumos basicos\n-No realiza entregas a domicilio</string>
+    <string name="negocio8">-Este negocio atiende de 10:00 a 21:00\n-Venta de todo tipo de bebidas y alcohol\n-No realiza entregas a domicilio</string>
+    <string name="negocio9">-Este negocio atiende de 9:00 a 18:00\n-Venta de frutas y verduras\n-Si realiza entregas a domicilio</string>
 </resources>

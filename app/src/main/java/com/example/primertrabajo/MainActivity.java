@@ -11,19 +11,25 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText user, pass;
     Button btn_ingresar, btn_registrar;
     SensorManager misensorManager;
     Sensor misensor;
     SensorEventListener milistener;
+    UsuarioSQL asql;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        user = (EditText)findViewById(R.id.usuario);
+        pass = (EditText)findViewById(R.id.pass);
         btn_ingresar = (Button) findViewById(R.id.btn_ingresar);
         btn_ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         });
         misensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         misensor = misensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        asql = new UsuarioSQL(this);
 
         if (misensor == null) {
             finish();
@@ -62,9 +69,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Ingresar(){
-        Intent ingresar = new Intent(this, MainActivity3.class);
-        startActivity(ingresar);
-        detener();
+        String u = user.getText().toString();
+        String p = pass.getText().toString();
+        if(u.equals("") && p.equals("")) {
+            Toast.makeText(this, "Debe ingresar su usuario y su clave", Toast.LENGTH_SHORT).show();
+        }else if(asql.login(u,p)==1){
+            Usuario datos = asql.getUsuario(u,p);
+            Toast.makeText(this, "Ingreso correcto", Toast.LENGTH_SHORT).show();
+            Intent ingresar = new Intent(this, Perfil.class);
+            ingresar.putExtra("Id", datos.getId());
+            startActivity(ingresar);
+            detener();
+            finish();
+
+        }else{
+            Toast.makeText(this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public void Registrar(){
